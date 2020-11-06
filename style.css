@@ -1,0 +1,232 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+
+}
+
+/* ----- Header ------ */
+
+nav {
+    height: 50px;
+    background-color: #1d1d1d;
+}
+
+/* header nav {
+    padding: 12px 70px;
+    margin: 0;
+} */
+
+header {
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 70px;
+    margin: 0;
+    list-style: none;
+}
+
+.menu .menu-link {
+    color: #f2f2f2;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.menu .menu-item {
+    border-right: 2px solid black;
+    padding-right: 28px;
+}
+
+.subheader {
+    position: absolute;
+    width: 100%;
+    height: 84px;
+    background-color: rgba(0,0,0, 0.6);
+}
+
+.subheader .subheader-logo {
+    display: inline-block;
+    max-width: 100%;
+    margin-top: 14px;
+}
+
+.subheader .subheader-text {
+    margin-top: 3px;
+    margin-left: 40px;
+    opacity: 0.6;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.subheader .subheader-call {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 19px;
+    text-align: right;
+}
+
+.subheader .subheader-phone {
+    display: block;
+    color: #ffffff;
+    /* margin-top: 4px; */
+    line-height: 24px;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.subheader .subheader-btn {
+    width: 170px;
+    height: 46px;
+    box-shadow: inset 0 -3px 0 rgba(0,0,0, 0.1);
+    background-color: #1eacc7;
+    text-shadow: 1px 1px 0 rgba(0,0,0, 0.2);
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 18px;
+}
+
+/* ----- First screen  ------ */
+
+.promo {
+    min-height: 780px;
+    background: url('../img/bg-promo.jpg') center center/cover no-repeat;
+    padding: 140px 0 130px 0;
+    /* transform: translateY(-84px);
+    z-index: 1; */
+}
+
+.promo .promo-header {
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 56px;
+    line-height: 60px;
+    margin: 0;
+    text-align: center;
+}
+
+.promo .promo-subheader {
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.promo .promo-text {
+    color: #e5e5e5;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.promo .promo-btn {
+    display: block;
+    width: 240px;
+    height: 60px;
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.1);
+    background-color: #1eacc7;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 100px auto 0 auto;
+}
+
+/* ------ UNiversal blocks ------ */
+
+.label {
+    height: 35px;
+    width: 180px;
+    margin: 0 auto;
+    background-color: #1d1d1d;
+    color: #e5e5e5;
+    text-align: center;
+}
+
+.block-title {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+/* ----- 8 reason to work ------ */
+
+.reasons {
+    padding: 70px 0 60px 0;
+}
+
+.label p {
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 35px;
+    letter-spacing : 0.1em;
+    margin: 0;
+}
+
+.row-reasons {
+    display: flex;
+    margin-top: 25px;
+    padding-top: 15px;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 5px;
+}
+
+.col-reasons {
+    padding: 0;
+    margin-bottom: 15px;
+    display: flex; 
+    justify-content:flex-start;
+    align-items: flex-start;
+}
+
+.reasons-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* width: 113px;*/
+    margin-left: 35px;
+    margin-right: 20px;
+}
+
+.descript-subheader {
+    color: #006699;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+
+.icon-block {
+    display: block;
+}
+
+.reasons-text {
+    max-width: 350px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 5px;
+}

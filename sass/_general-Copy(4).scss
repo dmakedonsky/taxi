@@ -1,0 +1,540 @@
+/* ----- Header ------ */
+
+nav {
+    height: 50px;
+    background-color: #1d1d1d;
+}
+.hamburger {
+    display: none;
+}
+header {
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 70px;
+    margin: 0;
+    list-style: none;
+
+    &-link {
+        color: #f2f2f2;
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    &-item {
+        border-right: 2px solid black;
+        padding-right: 28px;
+        &:last-child {
+            border-right: none;
+        }
+
+        a:hover,
+        a:active {
+            color: $main-color;
+            text-decoration: none;
+        }
+    }
+}
+
+.subheader {
+    position: absolute;
+    width: 100%;
+    height: 84px;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    &-logo {
+        display: inline-block;
+        max-width: 100%;
+        margin-top: 14px;
+    }
+
+    &-text {
+        margin-top: 3px;
+        margin-left: 40px;
+        opacity: 0.6;
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    &-call {
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: 300;
+        margin-top: 19px;
+        text-align: right;
+    }
+
+    &-phone {
+        display: block;
+        color: #ffffff;
+
+        /* margin-top: 4px; */
+        line-height: 24px;
+        font-size: 22px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: right;
+    }
+
+    &-btn {
+        width: 170px;
+        height: 46px;
+        box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.1);
+        background-color: $main-color;
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+        border: none;
+        border-radius: 4px;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-top: 18px;
+        @include btn-hover;
+    }
+}
+
+/* ----- First screen  ------ */
+
+.promo {
+    min-height: 780px;
+    background: url('../img/bg-promo.jpg') center (center / cover) no-repeat;
+    padding: 140px 0 130px 0;
+
+    &-header {
+        color: #ffffff;
+        font-family: 'Russo One';
+        // font-weight: 700;
+        text-transform: uppercase;
+        font-size: 50px;
+        line-height: 60px;
+        letter-spacing: 0.1em;
+        margin: 0;
+        text-align: center;
+    }
+
+    &-subheader {
+        color: #ffffff;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 36px;
+        line-height: 40px;
+        margin: 0;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    &-text {
+        color: #e5e5e5;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 24px;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    &-btn {
+        display: block;
+        width: 240px;
+        height: 60px;
+        box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.1);
+        background-color: $main-color;
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+        border: none;
+        border-radius: 5px;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 100px auto 0 auto;
+        @include btn-hover;
+    }
+}
+
+/* ------ Universal blocks ------ */
+
+.label {
+    height: 35px;
+    width: 180px;
+    margin: 0 auto;
+    background-color: #000000;
+    color: #e5e5e5;
+    text-align: center;
+
+    p {
+        font-size: 14px;
+        font-weight: 300;
+        text-transform: uppercase;
+        line-height: 35px;
+        letter-spacing: 0.1em;
+        margin: 0;
+    }
+}
+
+.block-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.block-subtitle {
+    margin-top: 15px;
+    color: #222222;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 20px;
+}
+
+/* ----- 8 reason to work ------ */
+
+.reasons {
+    padding: 70px 0 60px 0;
+
+    
+}
+
+.row-reasons {
+    display: flex;
+    margin-top: 25px;
+    padding-top: 15px;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 5px;
+}
+
+.col-reasons {
+    display: flex;
+    padding: 0;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.reasons-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-left: 35px;
+    margin-right: 20px;
+}
+
+.descript-subheader {
+    color: #006699;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+
+.icon-block {
+    display: block;
+}
+
+.reasons-text {
+    max-width: 350px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+
+/* ----- Mobile UBER ------ */
+
+.mobile {
+    height: 860px;
+    padding: 48px 0 80px 0;
+    background: url('../img/bg-mobile.jpg') center (center / cover) no-repeat;
+
+    .row {
+        margin-top: 30px;
+    }
+
+    &-item {
+        position: relative;
+        width: 320px;
+        height: 280px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        padding-top: 90px;
+
+        &-1 {
+            background: url('../img/icons/mobile-1.png') center (center/cover) no-repeat;
+        }
+
+        &-2 {
+            background: url('../img/icons/mobile-2.png') center (center/cover) no-repeat;
+        }
+
+        &-3 {
+            background: url('../img/icons/mobile-3.png') center (center/cover) no-repeat;
+        }
+
+        &-4 {
+            background: url('../img/icons/mobile-4.png') center (center/cover) no-repeat;
+        }
+
+        &-5 {
+            background: url('../img/icons/mobile-5.png') center (center/cover) no-repeat;
+        }
+
+        &-6 {
+            background: url('../img/icons/mobile-6.png') center (center/cover) no-repeat;
+        }
+
+        &-subtitle {
+            color: #f2f2f2;
+            font-size: 24px;
+            font-weight: 400;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        &-plus {
+            display: block;
+            position: absolute;
+            // justify-content: center;
+            // align-items: center;
+            width: 26px;
+            height: 26px;
+            margin: 0 auto;
+            bottom: 35px;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+
+            img {
+                width: 100%;
+                transition: 0.5s;
+
+                &:hover {
+                    transform: scale(1.3);
+                }
+            }
+        }
+
+    }
+}
+
+/* ----- Mobile UBER ------ */
+
+.choice {
+    background: url('../img/bg-choice.jpg') center (center / cover) no-repeat;
+    padding: 50px 0 120px 0;
+}
+
+.label-white p {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: #f2f2f2;
+    color: #222222;
+    line-height: 35px;
+    letter-spacing: 0.1em;
+    margin: 0;
+}
+
+.title-white,
+.subtitle-white {
+    color: #f2f2f2;
+}
+
+.img-auto {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.choice-descript {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    color: #222222;
+}
+
+/* ----- Require ------ */
+
+.require {
+    padding: 60px 0 80px 0;
+
+    &-block {
+        margin: 30px 0;
+
+        &-nomargin {
+            margin-bottom: 0px;
+        }
+    }
+
+    &-title {
+        color: #1ca8c3;
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    &-list {
+        list-style-type: none;
+        padding-left: 50px;
+
+        li {
+            position: relative;
+            font-size: 17px;
+            font-weight: 300;
+            line-height: 24px;
+            margin-top: 16px;
+
+            // }   
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                left: -30px;
+                top: 3px;
+                // transform: translateY(-50%);
+                // vertical-align: middle;
+                // transform: translate(-6px, -2px);
+                width: 21px;
+                height: 20px;
+                background: url('../img/icons/marker-green.png') center (center/cover) no-repeat;
+            }
+        }
+    }
+
+    .warning {
+        .require-title {
+            color: $warning-color;
+        }
+
+        .require-list {
+            li {
+                &:before {
+                    background: url('../img/icons/marker-red.png') center (center/cover) no-repeat;
+                }
+
+            }
+        }
+
+    }
+}
+
+/* ----- Require ------ */
+
+footer {
+    height: 145px;
+    background-color: #222222;
+    padding-top: 15px;
+}
+
+.footer-line {
+    display: block;
+    width: 300px;
+    height: 5px;
+    background-color: $main-color;
+    margin: 0 auto;
+
+    // border: 2px solid #222222;
+}
+
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-social {
+    display: flex;
+    color: #f2f2f2;
+    width: 33%;
+    margin-top: 30px;
+    padding-left: 40px;
+    justify-content: flex-start;
+
+    img {
+        width: 35px;
+        height: 35px;
+        margin-right: 15px;
+    }
+}
+
+.footer-mobile {
+    display: flex;
+    color: #f2f2f2;
+    width: 33%;
+    margin-top: 30px;
+    padding-right: 40px;
+    justify-content: flex-end;
+
+    img {
+        // width: 35px;
+        height: 35px;
+        margin-left: 15px;
+    }
+}
+
+.footer-links {
+    width: 34%;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    list-style: none;
+
+    &-link {
+        color: #f2f2f2;
+        font-size: 15px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    &-item {
+        padding-right: 15px;
+        padding-left: 15px;
+        line-height: 15px;
+
+        a:hover,
+        a:active {
+            color: $main-color;
+            text-decoration: none;
+        }
+    }
+}
+
+.footer-submenu {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 15px;
+    list-style: none;
+
+    &-link {
+        color: #a5a5a5;
+        font-size: 12px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    &-item {
+        padding-right: 15px;
+        padding-left: 15px;
+        line-height: 15px;
+
+        a:hover,
+        a:active {
+            color: $main-color;
+            text-decoration: none;
+        }
+    }
+}
+.xs-visible {
+    display: none;
+}
